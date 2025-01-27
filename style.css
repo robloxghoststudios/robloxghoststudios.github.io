@@ -1,47 +1,95 @@
-/* Global Styles */
-body {
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
-    background-color: #333; /* Dark gray background */
-    color: white; /* White text for contrast */
-    font-family: Arial, sans-serif;
-    text-align: center; /* Center all content */
+    box-sizing: border-box;
 }
 
-/* Container to hold the content */
-.container {
-    max-width: 800px;
-    margin: 0 auto;
+/* Body Styles */
+body {
+    background-color: #1e1e1e; /* Dark Gray Background */
+    color: #f0f0f0; /* Light Gray Text */
+    font-family: 'Roboto', sans-serif; /* Modern, professional font */
+    line-height: 1.6;
+    text-align: center; /* Center everything */
     padding: 20px;
 }
 
-/* Logo Styling */
+/* Header Section */
+header {
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #2a2a2a, #1e1e1e);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
 .logo {
-    width: 150px; /* Adjust size as needed */
-    height: 150px;
-    border-radius: 50%; /* Makes the image circular */
-    border: 3px solid white; /* Optional: Adds a white border */
+    width: 200px; /* Slightly larger logo */
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #f0f0f0; /* Sleek border */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7); /* Soft shadow */
     margin-bottom: 20px;
 }
 
-/* Title Styling */
-h1 {
-    font-size: 2.5em;
-    font-weight: bold;
-    margin-bottom: 20px;
+/* Title */
+.title {
+    font-size: 3rem; /* Bigger and bolder title */
+    font-weight: 700;
+    text-transform: uppercase; /* Gives a professional feel */
+    letter-spacing: 2px;
+    color: #f0f0f0;
+    margin-bottom: 10px;
 }
 
 /* About Us Section */
-.about-us p {
-    font-size: 1.2em;
-    font-style: italic; /* Makes the text italic */
-    line-height: 1.5;
-    margin-bottom: 40px;
+.about-us {
+    background-color: #2a2a2a; /* Slightly lighter background for contrast */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Adds depth */
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 800px; /* Keeps it neatly centered */
 }
 
-/* Footer Styling */
-footer p {
-    font-size: 1em;
-    font-weight: bold;
+.about-us h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-transform: capitalize;
+    border-bottom: 2px solid #f0f0f0;
+    display: inline-block; /* Makes the heading look more subtle */
+    padding-bottom: 5px;
+}
+
+.about-us p {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #d0d0d0; /* Softer contrast text */
+    line-height: 1.8;
+    margin: 10px auto;
+}
+
+/* Footer Section */
+footer {
     margin-top: 30px;
+    padding: 20px;
+    background-color: #2a2a2a;
+    color: #d0d0d0;
+    font-size: 1rem;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow above footer */
+}
+
+footer strong {
+    color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .about-us {
+        padding: 20px;
+    }
 }
