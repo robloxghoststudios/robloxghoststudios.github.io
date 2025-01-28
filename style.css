@@ -83,6 +83,25 @@ footer strong {
     color: #ffffff;
 }
 
+/* Social Links Section */
+.social-links {
+    display: flex;
+    justify-content: center; /* Center the icons horizontally */
+    gap: 15px; /* Space between the icons */
+    margin-top: 15px; /* Adds spacing from the footer text */
+}
+
+.social-icon {
+    width: 40px; /* Size of the social media icons */
+    height: 40px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1); /* Slightly enlarge icon on hover */
+    filter: brightness(1.2); /* Make it look brighter on hover */
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .title {
