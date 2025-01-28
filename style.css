@@ -92,8 +92,9 @@ footer strong {
 }
 
 .social-icon {
-    width: 40px; /* Size of the social media icons */
+    width: 40px; /* Consistent size for all icons */
     height: 40px;
+    object-fit: contain; /* Ensures the image scales properly without distortion */
     transition: transform 0.3s ease, filter 0.3s ease;
 }
 
